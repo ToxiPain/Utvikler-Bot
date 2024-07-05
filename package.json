@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.5",
+    "baileys": "github:WhiskeySockets/Baileys"
+  }
+}
