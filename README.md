@@ -1,5 +1,4 @@
-# `UTVIKLER WHATSAPP BOT` 
-Proyecto de Bot de Whatsapp usando Baileys.
+# `UTVIKLER WHATSAPP BOT` Proyecto de Bot de Whatsapp usando Baileys.
 
 ## `Info. Oficial:` 
 <a href="http://wa.me/50557418454" target="blank"><img src="https://img.shields.io/badge/ToxiPain-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
