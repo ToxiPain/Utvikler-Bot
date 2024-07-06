@@ -1,5 +1,5 @@
 # `UTVIKLER WHATSAPP BOT` 
-### <p style="color:blue;">**Proyecto_de_Bot_Base_Whatsapp_por_Utvikler_Team**</p>
+### **Proyecto de Bot Base Whatsapp por Utvikler Team**
 ✺ *         ⊹    
 
 · 　 . *       
