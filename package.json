@@ -1,6 +1,18 @@
 {
+  "type": "module",
+  "name": "utvikler-bot",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp utilizando Baileys",
+  "main": "index.js",
+  "directories": {
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.5",
-    "baileys": "github:WhiskeySockets/Baileys"
-  }
+    "@whiskeysockets/baileys": "^6.7.5"
+  },
+  "author": "ToxiPain & Dego",
+  "license": "MIT"
 }
+
