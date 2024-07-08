@@ -2,7 +2,7 @@
 //-
 // Importar constantes de Baileys
 "use strict";
-const { default: makeWASocket, initInMemoryKeyStore, DisconnectReason, useMultiFileAuthState, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+const { default: makeWASocket, initInMemoryKeyStore, BufferJSON, DisconnectReason, delay, AnyMessageContent, useMultiFileAuthState, makeInMemoryStore, } = require("@whiskeysockets/baileys");
 const { Boom } = require('@hapi/boom');
 const fs = require("fs");
 const logg = require('pino');
