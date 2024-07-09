@@ -20,6 +20,7 @@ const useMobile = process.argv.includes('--mobile'); //Weas de Native Mobile API
 
 // **Guardar la sesión en .json**
 let session = `./${setting.sessionName}.json`;
+let settings = JSON.parse(`settings.json`)
 
 // **Crear texto de Conexión**
 function title() {
@@ -47,3 +48,5 @@ async function fanStart() {
         title();
         // 
         store.bind(conn.ev);
+    }
+}
