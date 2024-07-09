@@ -17,9 +17,8 @@ const { MAIN_LOGGER } = require("./ruta/logger"); //PENDIENTE POR EDITAR
 const useStore = !process.argv.includes('--no-store'); //Se encarga de procesar MakeInMemory Store
 const usePairingCode = process.argv.includes('--use-pairing-code'); // Se usa para la parte del QR
 const useMobile = process.argv.includes('--mobile'); //Weas de Native Mobile API
-// ¿¿??
 
-// Guardar la sesión en:
+// **Guardar la sesión en .json**
 let session = `./${setting.sessionName}.json`;
 
 // **Crear texto de Conexión**
