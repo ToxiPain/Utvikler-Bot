@@ -11,8 +11,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.5"
-    "baileys": "github:WhiskeySockets/Baileys",
+    "@whiskeysockets/baileys": "^6.7.5",
+    "baileys": "github:WhiskeySockets/Baileys"
   },
   "author": "ToxiPain & Dego",
   "license": "MIT"
