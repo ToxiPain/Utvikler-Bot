@@ -1,3 +1,6 @@
+// |-------CODIGO DE "START" DEL BOT---------|
+
+
 // **Importar Dependencias**
 "use strict";
 const { default: makeWASocket, initInMemoryKeyStore, BufferJSON, DisconnectReason, delay, AnyMessageContent, useMultiFileAuthState, makeInMemoryStore, } = require("@whiskeysockets/baileys");
