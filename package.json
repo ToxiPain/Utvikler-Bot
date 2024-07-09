@@ -5,7 +5,15 @@
   "description": "Bot de WhatsApp utilizando Baileys",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "figlet": "^1.5.2",
+    "moment" : "^2.29.1",
+    "moment-timezone" : "^0.5.34",
+    "fs" : "0.0.1-security",
+    "Pino" : "^7.2.0",
+    "clui" : "^0.3.6",
+    "axios" : "^0.24.0",
+    "qrcode-terminal" : "^0.12.0"
   },
   "scripts": {
     "start": "node index.js"
