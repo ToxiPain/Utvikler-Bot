@@ -35,7 +35,7 @@ function title() {
     console.log(`Whatsapp Bot made by ToxiPain`);
 }
 
-// Node Cache 
+// **Node Cache**
 function nocache(module, cb = () => { }) {
     console.log(`Node Cache ${module} Watch`);
     fs.watchFile(require.resolve(module), async () => {
@@ -43,9 +43,10 @@ function nocache(module, cb = () => { }) {
         cb(module);
     });
 }
-
-// Make Memory Store
-async makeInMemoryStore
+// **Estado de conexión en caso de detectar cambios**
+const status = new Spinner('Iniciando el Bot');
+const starting = new Spinner('Preparando para conectarse');
+const reconnect = new Spinner('Reconectando Utvikler-Bot');
 
 // **Iniciar Conexión**
 async function fanStart() {
