@@ -6,6 +6,13 @@
   "main": "index.js",
   "directories": {
     "lib": "lib",
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.5",
+    "baileys": "github:WhiskeySockets/Baileys",
     "figlet": "^1.5.2",
     "moment" : "^2.29.1",
     "moment-timezone" : "^0.5.34",
@@ -16,14 +23,7 @@
     "qrcode-terminal" : "^0.12.0",
     "node-fetch": "^3.2.0",
     "chalk": "^5.0.0",
-"cheerio": "^1.0.0-rc.10"
-  },
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.5",
-    "baileys": "github:WhiskeySockets/Baileys"
+    "cheerio": "^1.0.0-rc.10"
   },
   "author": "ToxiPain & Dego",
   "license": "MIT"
