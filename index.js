@@ -64,3 +64,18 @@ async function fanStart() {
     }
 }
 
+
+// FINAL DEL CODIGO DE EXAMPLE.TS EN JS
+       conn.reply = (from, content, msg) => conn.sendMessage(from, { text: content }, { quoted: msg });
+
+        return conn;
+    };
+
+    try {
+        await connectToWhatsApp();
+    } catch (error) {
+        console.error('Error iniciando el bot:', error);
+    }
+}
+// Equivalente de Main start
+fanStart();
