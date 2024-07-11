@@ -35,6 +35,18 @@ function title() {
     console.log(`Whatsapp Bot made by ToxiPain`);
 }
 
+// Node Cache 
+function nocache(module, cb = () => { }) {
+    console.log(`Node Cache ${module} Watch`);
+    fs.watchFile(require.resolve(module), async () => {
+        await uncache(require.resolve(module));
+        cb(module);
+    });
+}
+
+// Make Memory Store
+async makeInMemoryStore
+
 // **Iniciar Conexión**
 async function fanStart() {
     const connectToWhatsApp = async () => {
@@ -50,3 +62,4 @@ async function fanStart() {
         store.bind(conn.ev);
     }
 }
+
