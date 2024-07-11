@@ -1,5 +1,5 @@
 {
-  "name": "utvikler-bot",
+  "name": "Utvikler-bot",
   "version": "1.0.0",
   "description": "Bot de WhatsApp utilizando Baileys",
   "main": "index.js",
