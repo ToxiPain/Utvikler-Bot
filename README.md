@@ -23,10 +23,10 @@
 ### `Documentación:` 
 ***-Este proyecto utiliza:***
 <div><button id="boton" type="button">Baileys by Adiwajshing & WhiskeySockets</button></div>
-<a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
+<a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="200" height="200" alt="adiwajshing"/></a>
 
 ### `Creadores & Colaboradores:`
-<a href="https://github.com/ToxiPain"><img src="https://github.com/ToxiPain.png" width="200" height="200" alt="ToxiPain"/></a>
-<a href="https://github.com/Dego06"><img src="https://github.com/Dego06.png" width="200" height="200" alt="Dego06"/></a>
-<a href="https://github.com/Rafa477-tech"><img src="https://github.com/Rafa477-tech.png" width="200" height="200" alt="Rafa477-tech"/></a>
-<a href="https://github.com/OsExar"><img src="https://github.com/OsExar.png" width="200" height="200" alt="OsExar"/></a>
+<a href="https://github.com/ToxiPain"><img src="https://github.com/ToxiPain.png" width="100" height="100" alt="ToxiPain"/></a>
+<a href="https://github.com/Dego06"><img src="https://github.com/Dego06.png" width="100" height="100" alt="Dego06"/></a>
+<a href="https://github.com/Rafa477-tech"><img src="https://github.com/Rafa477-tech.png" width="100" height="100" alt="Rafa477-tech"/></a>
+<a href="https://github.com/OsExar"><img src="https://github.com/OsExar.png" width="100" height="100" alt="OsExar"/></a>
