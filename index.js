@@ -1,6 +1,5 @@
 // |-------CODIGO DE "START" DEL BOT---------|
-
-
+//
 // **Importar Dependencias**
 "use strict";
 const { default: makeWASocket, initInMemoryKeyStore, BufferJSON, DisconnectReason, delay, AnyMessageContent, useMultiFileAuthState, makeInMemoryStore, } = require("@whiskeysockets/baileys");
@@ -19,7 +18,7 @@ const usePairingCode = process.argv.includes('--use-pairing-code'); // Se usa pa
 const useMobile = process.argv.includes('--mobile'); //Weas de Native Mobile API
 
 // **Definir el nombre de la sesión**
-let setting = JSON.parse(fs.readFileSync('./global.json'));
+let setting = JSON.parse(fs.readFileSync('./global.json')); //Setting = Global.json
 let session = `./${setting.sessionName}.json`;
 
 // **Crear texto de Conexión**
@@ -43,6 +42,17 @@ function nocache(module, cb = () => { }) {
         cb(module);
     });
 }
+
+function uncache(module = '.') {
+    return new Promise((resolve, reject) => {
+        try {
+            delete require.cache[require.resolve(module)];
+            resolve();
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
 // **Estado de conexión en caso de detectar cambios**
 const status = new Spinner('Iniciando el Bot');
 const starting = new Spinner('Preparando para conectarse');
@@ -64,10 +74,28 @@ async function fanStart() {
     }
 }
 
-// **Estructura de lectura de mensajes**
+// **Output de mensajes en la consola**
 	conn.prefijo = true // el prefijo definido
-	conn.nopref = false // sin prefijo
+	conn.nopref = false // sin uso de prefijo
 	conn.prefa = '|' // prefijo de ejemplo
+            if (!m.messages) return;
+            var msg = m.messages[0];
+            msg = serialize(conn, msg);
+            msg.isBaileys = msg.key.id.startsWith('BAE5') || msg.key.id.startsWith('3EB0');
+            require('./whisp')(conn, msg, m, setting, store);
+        });
+// Actualización de conexión y cerrado de sesión
+        conn.ev.on('connection.update', (update) => {
+            if (global.qr !== update.qr) {
+                global.qr = update.qr;
+            }
+            const { connection, lastDisconnect } = update;
+            if (connection === 'close') {
+                lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? connectToWhatsApp() : console.log('Cesión cerrada. Bot desconectado...');
+            }
+        });
+
+        conn.ev.on('creds.update', saveCreds); // Guardado de sesión
 
 
 // FINAL DEL CODIGO DE EXAMPLE.TS EN JS
