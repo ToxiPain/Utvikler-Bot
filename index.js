@@ -18,9 +18,9 @@ const useStore = !process.argv.includes('--no-store'); //Se encarga de procesar 
 const usePairingCode = process.argv.includes('--use-pairing-code'); // Se usa para la parte del QR
 const useMobile = process.argv.includes('--mobile'); //Weas de Native Mobile API
 
-// **Guardar la sesión en .json**
+// **Definir el nombre de la sesión**
+let setting = JSON.parse(fs.readFileSync('./global.json'));
 let session = `./${setting.sessionName}.json`;
-let settings = JSON.parse(`global.json`)
 
 // **Crear texto de Conexión**
 function title() {
