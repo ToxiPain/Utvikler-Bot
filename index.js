@@ -64,6 +64,11 @@ async function fanStart() {
     }
 }
 
+// **Estructura de lectura de mensajes**
+	conn.prefijo = true // el prefijo definido
+	conn.nopref = false // sin prefijo
+	conn.prefa = '|' // prefijo de ejemplo
+
 
 // FINAL DEL CODIGO DE EXAMPLE.TS EN JS
        conn.reply = (from, content, msg) => conn.sendMessage(from, { text: content }, { quoted: msg });
