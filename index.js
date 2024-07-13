@@ -70,7 +70,7 @@ async function fanStart() {
 
         return conn;
     };
-
+// Detección de error
     try {
         await connectToWhatsApp();
     } catch (error) {
